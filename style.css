@@ -1,5 +1,5 @@
 /* Variabel warna */
-:root {s
+:root {
   --hijau-tua: #176b3a;
   --hijau-muda: #e4f5e9;
   --putih: #fff;
@@ -9,7 +9,9 @@
 }
 
 /* Reset dan gaya dasar */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   color: var(--teks-gelap);
@@ -17,9 +19,18 @@ body {
   font-family: sans-serif;
   line-height: 1.6;
 }
-a { color: inherit; }
-section { max-width: 1100px; margin: auto; padding: 56px 24px; }
-h2 { color: var(--hijau-tua); text-align: center; }
+a {
+  color: inherit;
+}
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 56px 24px;
+}
+h2 {
+  color: var(--hijau-tua);
+  text-align: center;
+}
 
 /* Navigasi */
 .navbar {
@@ -31,14 +42,23 @@ h2 { color: var(--hijau-tua); text-align: center; }
   color: var(--putih);
   background: var(--hijau-tua);
 }
-.logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
 .navbar nav {
   display: flex;
   gap: 20px;
   list-style: none;
 }
-.navbar nav a { text-decoration: none; }
-.navbar nav a:hover, .navbar nav a:focus { text-decoration: underline; }
+.navbar nav a {
+  text-decoration: none;
+}
+.navbar nav a:hover,
+.navbar nav a:focus {
+  text-decoration: underline;
+}
 
 /* Bagian pembuka */
 .hero {
@@ -52,14 +72,20 @@ h2 { color: var(--hijau-tua); text-align: center; }
   color: var(--hijau-tua);
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
-.hero p { max-width: 620px; margin: 0 auto 28px; }
-.hero-actions, .filter-options {
+.hero p {
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+.hero-actions,
+.filter-options {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
 }
-.btn, .filter-btn, #btn-berikutnya {
+.btn,
+.filter-btn,
+#btn-berikutnya {
   display: inline-block;
   border: 0;
   border-radius: 999px;
@@ -70,7 +96,11 @@ h2 { color: var(--hijau-tua); text-align: center; }
   font: inherit;
   text-decoration: none;
 }
-.btn:hover, .filter-btn:hover, #btn-berikutnya:hover { background: var(--hijau-aksen); }
+.btn:hover,
+.filter-btn:hover,
+#btn-berikutnya:hover {
+  background: var(--hijau-aksen);
+}
 
 /* Pencarian, filter, dan kartu */
 #search-input {
@@ -82,9 +112,19 @@ h2 { color: var(--hijau-tua); text-align: center; }
   border-radius: 8px;
   font: inherit;
 }
-.filter-options { gap: 8px; margin-bottom: 28px; }
-.filter-btn { padding: 8px 16px; color: var(--hijau-tua); background: var(--hijau-muda); }
-.filter-btn.aktif { color: var(--putih); background: var(--hijau-tua); }
+.filter-options {
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.filter-btn {
+  padding: 8px 16px;
+  color: var(--hijau-tua);
+  background: var(--hijau-muda);
+}
+.filter-btn.aktif {
+  color: var(--putih);
+  background: var(--hijau-tua);
+}
 #hasil-sampah {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -97,12 +137,21 @@ h2 { color: var(--hijau-tua); text-align: center; }
   background: var(--putih);
   box-shadow: 0 3px 10px rgb(23 107 58 / 10%);
 }
-#pesan-kosong { color: var(--hijau-tua); text-align: center; }
+#pesan-kosong {
+  color: var(--hijau-tua);
+  text-align: center;
+}
 
 /* Area kuis dan pilihan jawaban */
-#kuis { background: var(--hijau-muda); }
-#kuis-container { max-width: 680px; margin: 0 auto 20px; }
-#kuis-container button, .opsi {
+#kuis {
+  background: var(--hijau-muda);
+}
+#kuis-container {
+  max-width: 680px;
+  margin: 0 auto 20px;
+}
+#kuis-container button,
+.opsi {
   display: block;
   width: 100%;
   margin: 8px 0;
@@ -115,21 +164,59 @@ h2 { color: var(--hijau-tua); text-align: center; }
   font: inherit;
   text-align: left;
 }
-#kuis-container button:hover, .opsi:hover { border-color: var(--hijau-aksen); background: #f1fbf3; }
-.benar { border-color: var(--hijau-aksen); background: #d7f2df; }
-.salah { border-color: var(--merah); background: #fbe0dc; }
-#skor-kuis { text-align: center; }
+#kuis-container button:hover,
+.opsi:hover {
+  border-color: var(--hijau-aksen);
+  background: #f1fbf3;
+}
+.benar {
+  border-color: var(--hijau-aksen);
+  background: #d7f2df;
+}
+.salah {
+  border-color: var(--merah);
+  background: #fbe0dc;
+}
+#skor-kuis {
+  text-align: center;
+}
 
 /* Dampak dan footer */
-#dampak p { max-width: 760px; margin: auto; text-align: center; }
-footer { padding: 20px 24px; color: var(--putih); background: var(--hijau-tua); text-align: center; }
-footer p { margin: 0; }
+#dampak p {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  padding: 20px 24px;
+  color: var(--putih);
+  background: var(--hijau-tua);
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
 
 /* Penataan layar ponsel */
 @media (max-width: 600px) {
-  .navbar { align-items: flex-start; flex-direction: column; gap: 10px; }
-  .navbar nav { width: 100%; justify-content: space-between; gap: 8px; font-size: .9rem; }
-  section { padding: 40px 16px; }
-  .hero { padding: 64px 16px; }
-  #hasil-sampah { grid-template-columns: 1fr; }
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 40px 16px;
+  }
+  .hero {
+    padding: 64px 16px;
+  }
+  #hasil-sampah {
+    grid-template-columns: 1fr;
+  }
 }

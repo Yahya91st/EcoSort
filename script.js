@@ -1,55 +1,57 @@
 // Data contoh untuk katalog sampah.
-const dataSampah = [s
+const dataSampah = [
   {
     nama: "Sisa makanan",
     kategori: "organik",
-    panduan: "Masukkan ke wadah organik atau olah menjadi kompos."
+    panduan: "Masukkan ke wadah organik atau olah menjadi kompos.",
   },
   {
     nama: "Kulit buah",
     kategori: "organik",
-    panduan: "Pisahkan dari sampah lain dan gunakan untuk kompos."
+    panduan: "Pisahkan dari sampah lain dan gunakan untuk kompos.",
   },
   {
     nama: "Botol plastik",
     kategori: "daur-ulang",
-    panduan: "Kosongkan, bilas, lalu pisahkan untuk didaur ulang."
+    panduan: "Kosongkan, bilas, lalu pisahkan untuk didaur ulang.",
   },
   {
     nama: "Kardus",
     kategori: "daur-ulang",
-    panduan: "Lipat dan pastikan kardus kering sebelum dikumpulkan."
+    panduan: "Lipat dan pastikan kardus kering sebelum dikumpulkan.",
   },
   {
     nama: "Kertas",
     kategori: "daur-ulang",
-    panduan: "Jaga tetap kering dan pisahkan dari kertas yang terkena minyak."
+    panduan: "Jaga tetap kering dan pisahkan dari kertas yang terkena minyak.",
   },
   {
     nama: "Kaleng",
     kategori: "daur-ulang",
-    panduan: "Kosongkan, bilas, dan kumpulkan bersama bahan logam."
+    panduan: "Kosongkan, bilas, dan kumpulkan bersama bahan logam.",
   },
   {
     nama: "Popok bekas",
     kategori: "residu",
-    panduan: "Bungkus dengan rapat dan buang ke tempat sampah residu."
+    panduan: "Bungkus dengan rapat dan buang ke tempat sampah residu.",
   },
   {
     nama: "Puntung rokok",
     kategori: "residu",
-    panduan: "Pastikan sudah padam, lalu buang ke tempat sampah residu."
+    panduan: "Pastikan sudah padam, lalu buang ke tempat sampah residu.",
   },
   {
     nama: "Baterai bekas",
     kategori: "limbah-khusus",
-    panduan: "Simpan terpisah dan serahkan ke fasilitas penerimaan limbah khusus."
+    panduan:
+      "Simpan terpisah dan serahkan ke fasilitas penerimaan limbah khusus.",
   },
   {
     nama: "Lampu bekas",
     kategori: "limbah-khusus",
-    panduan: "Jangan pecahkan dan serahkan ke fasilitas penerimaan yang sesuai."
-  }
+    panduan:
+      "Jangan pecahkan dan serahkan ke fasilitas penerimaan yang sesuai.",
+  },
 ];
 
 const hasilSampah = document.querySelector("#hasil-sampah");
@@ -108,32 +110,45 @@ const soalKuis = [
     pertanyaan: "Ke mana sisa makanan sebaiknya dipilah?",
     pilihan: ["Organik", "Residu", "Limbah khusus"],
     jawabanBenar: 0,
-    penjelasan: "Sisa makanan termasuk sampah organik yang dapat diolah menjadi kompos."
+    penjelasan:
+      "Sisa makanan termasuk sampah organik yang dapat diolah menjadi kompos.",
   },
   {
     pertanyaan: "Apa yang dilakukan pada botol plastik sebelum didaur ulang?",
-    pilihan: ["Dibakar", "Dikosongkan dan dibilas", "Dicampur dengan sisa makanan"],
+    pilihan: [
+      "Dibakar",
+      "Dikosongkan dan dibilas",
+      "Dicampur dengan sisa makanan",
+    ],
     jawabanBenar: 1,
-    penjelasan: "Botol plastik perlu dikosongkan dan dibilas agar lebih mudah didaur ulang."
+    penjelasan:
+      "Botol plastik perlu dikosongkan dan dibilas agar lebih mudah didaur ulang.",
   },
   {
     pertanyaan: "Popok bekas termasuk kategori apa?",
     pilihan: ["Organik", "Daur ulang", "Residu"],
     jawabanBenar: 2,
-    penjelasan: "Popok bekas termasuk residu dan perlu dibungkus sebelum dibuang."
+    penjelasan:
+      "Popok bekas termasuk residu dan perlu dibungkus sebelum dibuang.",
   },
   {
     pertanyaan: "Di mana baterai bekas sebaiknya diserahkan?",
-    pilihan: ["Fasilitas penerimaan limbah khusus", "Tempat kompos", "Tempat sampah organik"],
+    pilihan: [
+      "Fasilitas penerimaan limbah khusus",
+      "Tempat kompos",
+      "Tempat sampah organik",
+    ],
     jawabanBenar: 0,
-    penjelasan: "Baterai bekas adalah limbah khusus yang perlu diserahkan ke fasilitas yang sesuai."
+    penjelasan:
+      "Baterai bekas adalah limbah khusus yang perlu diserahkan ke fasilitas yang sesuai.",
   },
   {
     pertanyaan: "Bagaimana menangani kardus agar dapat didaur ulang?",
     pilihan: ["Dibuat basah", "Dilipat dan dijaga tetap kering", "Dibakar"],
     jawabanBenar: 1,
-    penjelasan: "Kardus yang dilipat dan tetap kering lebih mudah dikumpulkan untuk didaur ulang."
-  }
+    penjelasan:
+      "Kardus yang dilipat dan tetap kering lebih mudah dikumpulkan untuk didaur ulang.",
+  },
 ];
 
 const kuisContainer = document.querySelector("#kuis-container");
