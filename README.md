@@ -1,1 +1,1 @@
-# EcoSort
+# EcoSorts

@@ -1,62 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>s
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoSort - Pilah Sampahmu</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="navbar">
-    <a href="#beranda" class="logo">EcoSort</a>
-    <nav aria-label="Navigasi utama">
-      <a href="#beranda">Beranda</a>
-      <a href="#katalog">Katalog</a>
-      <a href="#kuis">Kuis</a>
-      <a href="#dampak">Dampak SDG</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSort - Pilah Sampahmu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#beranda" class="logo">EcoSort</a>
+      <nav aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#dampak">Dampak SDG</a>
+      </nav>
+    </header>
 
-  <main>
-    <section id="beranda" class="hero">
-      <h1>Pilah Sampahmu</h1>
-      <p>Kenali jenis sampah dan pilih cara memilah yang tepat untuk menjaga lingkungan mulai dari rumah.</p>
-      <div class="hero-actions">
-        <a class="btn" href="#katalog">Cari Jenis Sampah</a>
-        <a class="btn" href="#kuis">Coba Kuis</a>
-      </div>
-    </section>
+    <main>
+      <section id="beranda" class="hero">
+        <h1>Pilah Sampahmu</h1>
+        <p>
+          Kenali jenis sampah dan pilih cara memilah yang tepat untuk menjaga
+          lingkungan mulai dari rumah.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#katalog">Cari Jenis Sampah</a>
+          <a class="btn" href="#kuis">Coba Kuis</a>
+        </div>
+      </section>
 
-    <section id="katalog">
-      <h2>Katalog Jenis Sampah</h2>
-      <input type="search" id="search-input" placeholder="Cari: botol plastik, kardus..." aria-label="Cari jenis sampah">
-      <div class="filter-options" aria-label="Filter kategori sampah">
-        <button class="filter-btn" data-kategori="semua" type="button">Semua</button>
-        <button class="filter-btn" data-kategori="organik" type="button">Organik</button>
-        <button class="filter-btn" data-kategori="daur-ulang" type="button">Daur Ulang</button>
-        <button class="filter-btn" data-kategori="residu" type="button">Residu</button>
-        <button class="filter-btn" data-kategori="limbah-khusus" type="button">Limbah Khusus</button>
-      </div>
-      <div id="hasil-sampah"></div>
-      <p id="pesan-kosong" hidden>Tidak ada hasil</p>
-    </section>
+      <section id="katalog">
+        <h2>Katalog Jenis Sampah</h2>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Cari: botol plastik, kardus..."
+          aria-label="Cari jenis sampah"
+        />
+        <div class="filter-options" aria-label="Filter kategori sampah">
+          <button class="filter-btn" data-kategori="semua" type="button">
+            Semua
+          </button>
+          <button class="filter-btn" data-kategori="organik" type="button">
+            Organik
+          </button>
+          <button class="filter-btn" data-kategori="daur-ulang" type="button">
+            Daur Ulang
+          </button>
+          <button class="filter-btn" data-kategori="residu" type="button">
+            Residu
+          </button>
+          <button
+            class="filter-btn"
+            data-kategori="limbah-khusus"
+            type="button"
+          >
+            Limbah Khusus
+          </button>
+        </div>
+        <div id="hasil-sampah"></div>
+        <p id="pesan-kosong" hidden>Tidak ada hasil</p>
+      </section>
 
-    <section id="kuis">
-      <h2>Kuis Pemilahan Sampah</h2>
-      <div id="kuis-container"></div>
-      <button id="btn-berikutnya" type="button">Berikutnya</button>
-      <p id="skor-kuis"></p>
-    </section>
+      <section id="kuis">
+        <h2>Kuis Pemilahan Sampah</h2>
+        <div id="kuis-container"></div>
+        <button id="btn-berikutnya" type="button">Berikutnya</button>
+        <p id="skor-kuis"></p>
+      </section>
 
-    <section id="dampak">
-      <h2>Dampak SDG</h2>
-      <p>Pemilahan sampah membantu mendukung SDG 12 tentang konsumsi dan produksi yang bertanggung jawab serta SDG 11 tentang kota dan permukiman yang berkelanjutan.</p>
-    </section>
-  </main>
+      <section id="dampak">
+        <h2>Dampak SDG</h2>
+        <p>
+          Pemilahan sampah membantu mendukung SDG 12 tentang konsumsi dan
+          produksi yang bertanggung jawab serta SDG 11 tentang kota dan
+          permukiman yang berkelanjutan.
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2026 EcoSort. Belajar memilah, mulai dari sekarang.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2026 EcoSort. Belajar memilah, mulai dari sekarang.</p>
+    </footer>
+  </body>
 </html>

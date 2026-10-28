@@ -1,5 +1,5 @@
 // Data contoh untuk katalog sampah.
-const dataSampah = [
+const dataSampah = [s
   {
     nama: "Sisa makanan",
     kategori: "organik",
